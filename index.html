@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tailwind CSS Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Swiper.js CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <style>
+        /* Adding a simple animation to scale the background image */
+        .service-box:hover .service-image {
+            transform: scale(1.1);
+        }
+
+        /* Animation for hover effect */
+        .card:hover {
+            transform: translateY(-10px);
+            
+        }
+    </style>
+</head>
+<body class="bg-white-100">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md">
+        <div>
+            <nav class="container mx-auto flex justify-between items-center p-4 gap-4 shadow-md">
+              <div class="ps-24">
+                <a href="#Home">
+                  <span><img class="w-12 md:w-26 lg:w-28" src="img/Jlogo.png"></span>
+                </a>
+              </div>
+                <ul class="flex space-x-6">
+                    <li><a href="#Home" class="text-gray-600 hover:text-blue-700">Home</a></li>
+                    <li><a href="#About" class="text-gray-600 hover:text-blue-700">About</a></li>
+                    <li><a href="#Blog" class="text-gray-600 hover:text-blue-700">Blog</a></li>
+                    <li><a href="#services" class="text-gray-600 hover:text-blue-700">Services</a></li>
+                    <li><a href="#contact" class="text-gray-600 hover:text-blue-700">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-screen" style="background-image: url('img/background.png');">
+        <div class="bg-black bg-opacity-50 h-full flex flex-col justify-center items-center text-center text-white px-4">
+            <h6>Get Hired</h6>
+            <h1 class="text-5xl font-bold mb-4">Human Resources</h1>
+            <p class="leading-relaxed mb-10">The journey of a thousand miles begins with a 
+              Single step. Lets's make every step count together.</p>
+            <a href="#contact" class="bg-violet-600 hover:bg-violet-700 text-white py-3 px-6 rounded-md text-lg font-medium">Get Started</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">About Us</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-2">Born from a passion for travel and adventure,
+              we buiild our dream company to provide exceptional tavel and event experience.</p>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-10">The company was established by three young friend whose common love for travel and adventure,
+              dreamt of having their business expertise and experience in the event and travel industry coupled with their
+              desire to provide efficent professional service to all and demands of travelling public, bonded together
+              and established their own company.</p>
+              <button class="bg-violet-600 hover:bg-violet-700 text-white px-9 py-3 rounded-md capitalize font-bold 
+              hover:ocacity-80 ease-in duration-200 mb-20">See More...</button>
+        </div>
+
+        <!-- Mission, Vision, Core Values Section -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Mission Card (Yellow Background) -->
+            <div class="card relative bg-yellow-600 rounded-lg shadow-lg p-6 transform transition-transform duration-300 hover:shadow-2xl">
+                <div class="absolute inset-0 bg-black bg-opacity-30 rounded-lg"></div> <!-- Dark overlay -->
+
+                <div class="relative z-10 text-center text-white">
+                    <h3 class="text-2xl font-bold mb-4">MISSION</h3>
+                    <p>
+                        TO GIVE QUALITY SERVICES THAT EXCEEDS THE EXPECTATIONS OF OUR ESTEEMED CUSTOMERS AT A COST THAT WILL
+                    ENABLE US TO REMAIN COMPETITIVE.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Vision Card (Blue Background) -->
+            <div class="card relative bg-blue-600 rounded-lg shadow-lg p-6 transform transition-transform duration-300 hover:shadow-2xl">
+                <div class="absolute inset-0 bg-black bg-opacity-30 rounded-lg"></div> <!-- Dark overlay -->
+
+                <div class="relative z-10 text-center text-white">
+                    <h3 class="text-2xl font-bold mb-4">VISION</h3>
+                    <p>
+                        TO BE THE MOST SUCCESSFUL AND RESPECTED EVENT AND TRAVEL MANAGEMENT COMPANY IN THE COUNTRY BY PROVIDING
+                    HIGH CLASS EVENT AND TRAVEL SERVICES THOUGH EXCELLENT COMMITMENT AND CONSISTENT LEADERSHIP.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Vision Card (Blue Background) -->
+            <div class="card relative bg-red-600 rounded-lg shadow-lg p-6 transform transition-transform duration-300 hover:shadow-2xl">
+                <div class="absolute inset-0 bg-black bg-opacity-30 rounded-lg"></div> <!-- Dark overlay -->
+
+                <div class="relative z-10 text-center text-white">
+                    <h3 class="text-2xl font-bold mb-4">CORE VALUES</h3>
+                    <p>
+                        WE BELIEVE IN TREATING OUR CUSTOMERS WITH RESPECT AND FAITH. WE GROVE THROUGH CREATIVITY, INVENTION AND INNOVATION.
+                    WE INTERATE HONESY, INTEGRITY AND BUSINESS ETHICS INTO ALL ASPECTS OF OUR BUSINESS FUNCTIONING.
+                    </p>
+                </div>
+            </div>
+            </div>
+
+            <div class="container mx-auto flex items-center justify-center px-4 py-1.5 mb-4">
+                <!-- Circular Profile Card -->
+                <div class="card relative bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:shadow-2xl max-w-sm p-6 text-center">
+                    <div class="mb-4">
+                        <img src="img/jhune.png" alt="Profile Picture" class="profile-image w-32 h-32 rounded-full mx-auto object-cover border-4 border-gray-300">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Jhune Ernest Ogoy</h3>
+                    <p class="text-gray-600 mb-4">CEO</p>
+                    <p class="text-gray-700">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui magni odit delectus
+                         labore distinctio eaque fuga temporibus, officia sint perspiciatis error sapiente
+                          dolore earum nostrum ea ipsa aspernatur officiis deleniti.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Add FontAwesome Icons (optional) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    </section>
+
+        <!-- Blogs Section -->
+        <section id="blogs" class="py-20 bg-gray-100">
+          <div class="container mx-auto px-4 text-center">
+              <h2 class="text-3xl font-bold text-gray-800 mb-6">Blogs</h2>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="img/Elnido.png" alt="Card Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">El Nido</h3>
+                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magni esse quam. Voluptates in eaque
+                             adipisci! Et totam expedita, at ducimus nesciunt, minima nam quod eveniet, quis voluptatem incidunt tenetur.</p>
+                        <a href="#" class="text-gray-500 hover:text-gray-600 font-bold">Learn More</a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="img/boracay.png" alt="Card Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">boracay</h3>
+                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero error rerum ad
+                             porro minima et obcaecati itaque officiis! Natus, voluptate consequatur! Aliquam labore expedita amet nisi. Ratione nulla facilis sequi.</p>
+                        <a href="#" class="text-gray-500 hover:text-gray-600 font-bold">Learn More</a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="img/Siargao.png" alt="Card Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">Siargao</h3>
+                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit veniam eius earum ea. Neque
+                             vero vel obcaecati quis, natus, amet, impedit beatae suscipit quo hic at nemo nisi sint.</p>
+                        <a href="#" class="text-gray-500 hover:text-gray-600 font-bold">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+                  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center">
+                        <h2 class="text-base text-gray-700 font-semibold tracking-wide uppercase">Our Partners</h2>
+                    </div>
+            
+                    <!-- Swiper Slider -->
+                    <div class="mt-10 swiper-container flex justify-center">
+                        <div class="swiper-wrapper">
+                            <!-- Partner 1 -->
+                            <div class="swiper-slide flex justify-center">
+                                <img class="h-12" src="img/2go.png" alt="Partner 1 Logo">
+                            </div>
+                            <!-- Partner 2 -->
+                            <div class="swiper-slide flex justify-center">
+                                <img class="h-12" src="img/Aasia.png" alt="Partner 2 Logo">
+                            </div>
+                            <!-- Partner 3 -->
+                            <div class="swiper-slide flex justify-center">
+                                <img class="h-12" src="img/Cair.png" alt="Partner 3 Logo">
+                            </div>
+                            <!-- Partner 4 -->
+                            <div class="swiper-slide flex justify-center">
+                                <img class="h-12" src="img/Cpacific.png" alt="Partner 4 Logo">
+                            </div>
+                            <!-- Partner 5 -->
+                            <div class="swiper-slide flex justify-center">
+                                <img class="h-12" src="img/Eair.png" alt="Partner 5 Logo">
+                            </div>
+                            <!-- Partner 6 -->
+                            <div class="swiper-slide flex justify-center">
+                                <img class="h-12" src="img/Pairlines.png" alt="Partner 6 Logo">
+                            </div>
+                        </div>
+            
+                        <!-- Swiper Navigation -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Swiper.js JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 6, // Display 4 logos at a time
+        spaceBetween: 30, // Space between logos
+        loop: true, // Loop the slides
+        autoplay: {
+            delay: 2500, // Auto-slide every 2.5 seconds
+            disableOnInteraction: false, // Continue autoplay after interaction
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2, // 2 logos on small screens
+            },
+            768: {
+                slidesPerView: 3, // 3 logos on medium screens
+            },
+            1024: {
+                slidesPerView: 4, // 4 logos on large screens
+            },
+        },
+    });
+</script>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Our Services</h2>
+            <h2 class="text-xl font-bold text-gray-800 mb-6">We Offer</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service Box 1 -->
+            <div class="service-box group relative bg-gray-800 text-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                <!-- Background Image -->
+                <div class="service-image absolute inset-0 bg-cover bg-center transition-transform duration-500" style="background-image: url('img/Seminar.png');"></div>
+                
+                <!-- Overlay with content -->
+                <div class="relative z-10 p-6 flex flex-col justify-end h-full bg-gradient-to-t from-black via-transparent to-transparent">
+                    <h3 class="text-2xl font-bold mb-2">Seminar/Meeting</h3>
+                    <p class="text-gray-300 mb-4"></p>
+                    <a href="#" class="text-white-400 font-bold hover:text-white-500">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service Box 2 -->
+            <div class="service-box group relative bg-gray-800 text-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="service-image absolute inset-0 bg-cover bg-center transition-transform duration-500" style="background-image: url('img/Birthday.png');"></div>
+                <div class="relative z-10 p-6 flex flex-col justify-end h-full bg-gradient-to-t from-black via-transparent to-transparent">
+                    <h3 class="text-2xl font-bold mb-2">Birthday/Celebration</h3>
+                    <p class="text-gray-300 mb-4"></p>
+                    <a href="#" class="text-white-400 font-bold hover:text-white-500">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service Box 3 -->
+            <div class="service-box group relative bg-gray-800 text-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="service-image absolute inset-0 bg-cover bg-center transition-transform duration-500" style="background-image: url('img/Wedding.png');"></div>
+                <div class="relative z-10 p-6 flex flex-col justify-end h-full bg-gradient-to-t from-black via-transparent to-transparent">
+                    <h3 class="text-2xl font-bold mb-2">Wedding/Anniversary</h3>
+                    <p class="text-gray-300 mb-4"></p>
+                    <a href="#" class="text-white-400 font-bold hover:text-white-500">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service Box 4 -->
+            <div class="service-box group relative bg-gray-800 text-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="service-image absolute inset-0 bg-cover bg-center transition-transform duration-500" style="background-image: url('img/TeamBuilding.png');"></div>
+                <div class="relative z-10 p-6 flex flex-col justify-end h-full bg-gradient-to-t from-black via-transparent to-transparent">
+                    <h3 class="text-2xl font-bold mb-2">Team Building</h3>
+                    <p class="text-gray-300 mb-4"></p>
+                    <a href="#" class="text-white-400 font-bold hover:text-white-500">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service Box 5 -->
+            <div class="service-box group relative bg-gray-800 text-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="service-image absolute inset-0 bg-cover bg-center transition-transform duration-500" style="background-image: url('img/Concert.png');"></div>
+                <div class="relative z-10 p-6 flex flex-col justify-end h-full bg-gradient-to-t from-black via-transparent to-transparent">
+                    <h3 class="text-2xl font-bold mb-2">Concert/Pageant</h3>
+                    <p class="text-gray-300 mb-4"></p>
+                    <a href="#" class="text-white-400 font-bold hover:text-white-500">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service Box 6 -->
+            <div class="service-box group relative bg-gray-800 text-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="service-image absolute inset-0 bg-cover bg-center transition-transform duration-500" style="background-image: url('img/Fieldtrip.png');"></div>
+                <div class="relative z-10 p-6 flex flex-col justify-end h-full bg-gradient-to-t from-black via-transparent to-transparent">
+                    <h3 class="text-2xl font-bold mb-2">Field Trip</h3>
+                    <p class="text-gray-300 mb-4"></p>
+                    <a href="#" class="text-white-400 font-bold hover:text-white-500">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service Box 7 -->
+            <div class="service-box group relative bg-gray-800 text-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="service-image absolute inset-0 bg-cover bg-center transition-transform duration-500" style="background-image: url('img/AirlineT.png');"></div>
+                <div class="relative z-10 p-6 flex flex-col justify-end h-full bg-gradient-to-t from-black via-transparent to-transparent">
+                    <h3 class="text-2xl font-bold mb-2">Airline Ticketing</h3>
+                    <p class="text-gray-300 mb-4">.</p>
+                    <a href="#" class="text-white-400 font-bold hover:text-white-500">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service Box 8 -->
+            <div class="service-box group relative bg-gray-800 text-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="service-image absolute inset-0 bg-cover bg-center transition-transform duration-500" style="background-image: url('img/TourP.png');"></div>
+                <div class="relative z-10 p-6 flex flex-col justify-end h-full bg-gradient-to-t from-black via-transparent to-transparent">
+                    <h3 class="text-2xl font-bold mb-2">Tour Package</h3>
+                    <p class="text-gray-300 mb-4"></p>
+                    <a href="#" class="text-white-400 font-bold hover:text-white-500">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service Box 9 -->
+            <div class="service-box group relative bg-gray-800 text-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="service-image absolute inset-0 bg-cover bg-center transition-transform duration-500" style="background-image: url('img/BusVanRental.png');"></div>
+                <div class="relative z-10 p-6 flex flex-col justify-end h-full bg-gradient-to-t from-black via-transparent to-transparent">
+                    <h3 class="text-2xl font-bold mb-2">Bus/Van Rental</h3>
+                    <p class="text-gray-300 mb-4"></p>
+                    <a href="#" class="text-white-400 font-bold hover:text-white-500">Learn More</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Message Us</h2>
+            <form class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <input type="text" placeholder="Your Name" class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600">
+                </div>
+                <div class="mb-4">
+                    <input type="email" placeholder="Your Email" class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600">
+                </div>
+                <div class="mb-4">
+                    <textarea placeholder="Your Message" class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-md text-lg font-medium">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-white-800 text-gray-700 py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2024 JVD Travel and Tours. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="hover:text-blue-400">Facebook</a>
+                <a href="#" class="hover:text-blue-400">Twitter</a>
+                <a href="#" class="hover:text-blue-400">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
